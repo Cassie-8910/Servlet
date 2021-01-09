@@ -5,13 +5,13 @@
          version="4.0">
     <!-- servlet 接口实现类类路径地址交给Tomcat   -->
     <servlet>
-        <servlet-name>OneServlet</servlet-name>
-        <servlet-class>com.Cassie.Controller.AddNewStu</servlet-class>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>com.cassie.servlet.StudentServlet</servlet-class>
     </servlet>
 
     <!-- 为servlet接口实现提供简短别名  -->
     <servlet-mapping>
-        <servlet-name>OneServlet</servlet-name>
-        <url-pattern>/addNewStu</url-pattern>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/student</url-pattern>
     </servlet-mapping>
 </web-app>

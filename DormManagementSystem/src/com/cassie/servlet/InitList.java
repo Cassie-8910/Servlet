@@ -1,4 +1,4 @@
-package com.Cassie.Controller;
+package com.cassie.servlet;
 
 import javax.servlet.http.HttpServlet;
 
