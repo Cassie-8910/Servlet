@@ -14,4 +14,21 @@
         <servlet-name>StudentServlet</servlet-name>
         <url-pattern>/student</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentQueryServlet</servlet-name>
+        <servlet-class>com.cassie.servlet.StudentQueryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>StudentQueryServlet</servlet-name>
+        <url-pattern>/student/query</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.cassie.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
 </web-app>

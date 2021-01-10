@@ -9,6 +9,10 @@ public class Student {
     private String major;
     private String className;
 
+    public Student(){
+
+    }
+
     public Student(String stuNum, String name, String gender, String dormNum, String academy, String major, String className) {
         this.stuNum = stuNum;
         this.name = name;
