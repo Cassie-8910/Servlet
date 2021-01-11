@@ -20,6 +20,7 @@ public class StudentQueryServlet extends HttpServlet {
         System.out.println("进入查询");
         resp.setHeader("Access-Control-Allow-Origin", "*");  //  星号表示所有的域都可以接受
         resp.setHeader("Access-Control-Allow-Methods", "*");
+        resp.setHeader("Access-Control-Allow-Headers", "*");
         resp.setContentType("application/json;charset=UTF-8");
         resp.setCharacterEncoding("utf-8");
 
@@ -65,5 +66,13 @@ public class StudentQueryServlet extends HttpServlet {
         super.doPost(req, resp);
     }
 
-
+    @Override
+    public void doOptions(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("options请求");
+        resp.setHeader("Access-Control-Allow-Origin", "*");  //  星号表示所有的域都可以接受
+        resp.setHeader("Access-Control-Allow-Methods", "*");
+        resp.setHeader("Access-Control-Allow-Headers", "*");
+        resp.setContentType("application/json;charset=UTF-8");
+        resp.setCharacterEncoding("utf-8");
+    }
 }

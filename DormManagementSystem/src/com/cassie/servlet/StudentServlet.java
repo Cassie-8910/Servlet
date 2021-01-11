@@ -92,6 +92,7 @@ public class StudentServlet extends HttpServlet {
             resp.setStatus(500);
             resp.getWriter().write("{\"message\":\"添加失败,参数不能为空\"}");
             return;
+
         }
         if(stuNum.length() != 12) {
             Student student = new Student(stuNum, name, gender, dormNum, academy, major, className);
